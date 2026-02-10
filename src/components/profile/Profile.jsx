@@ -100,7 +100,7 @@ function Profile({ userRole, authFetch }) {
               <span><strong>Share your profile</strong></span><br/>
               {/* <code className="hash">{securityData.encodedID}</code> */}
               <img
-                src={`https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${'http://localhost:5173/users/'}`}
+                src={`https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${`http://localhost:5173/users/` + userData.id.toString()}`}
                 alt="Profile QR"
                 className="qr-code"
               />
